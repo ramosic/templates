@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>DefaultTemplate</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #292929;
+            font: 90% Roboto, Arial, sans-serif;
+            font-weight: 300;
+        }
+
+        p {
+            padding: 0 10px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            padding-right: 10px;
+            line-height: 1.6;
+        }
+
+        h3 {
+            padding: 5px 20px;
+            margin: 0;
+        }
+
+        div#header {
+            position: relative;
+        }
+
+        div#header h1 {
+            height: 80px;
+            line-height: 80px;
+            margin: 0;
+            padding-left: 10px;
+            background: #e0e0e0;
+            color: #292929;
+        }
+
+        div#header a {
+            position: absolute;
+            right: 0;
+            top: 23px;
+            padding: 10px;
+            color: #006;
+        }
+
+        div#navigation {
+            background: #7cb71c;
+        }
+
+        div#navigation li {
+            list-style: none;
+        }
+
+        div#extra {
+            background: #147FA9;
+        }
+
+        div#footer {
+            background: #42444e;
+            color: #fff;
+        }
+
+        div#footer p {
+            padding: 20px 10px;
+        }
+
+        div#container {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        div#content {
+            float: right;
+            width: 500px;
+        }
+
+        div#navigation {
+            float: left;
+            width: 200px;
+        }
+
+        div#extra {
+            clear: both;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Header</h1>
+        <a href="" target="_blank">hidden link</a>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <p><strong>ContentBox</strong></p>
+            <h3>Header 1 </h3>
+            <p>content1
+            </p>
+            <p>content2
+            </p>
+            <h3>Header 2</h3>
+            <p>content3
+            </p>
+        </div>
+    </div>
+    <div id="navigation">
+        <p><strong>NavMenu</strong></p>
+        <h3>Category1</h3>
+        <ul>
+            <li>menu1-1</li>
+            <li>menu1-2</li>
+            <li>menu1-3</li>
+            <li>menu1-4</li>
+            <li>menu1-5</li>
+        </ul>
+        <h3>Category2</h3>
+        <ul>
+            <li>menu2-1</li>
+            <li>menu2-2</li>
+            <li>menu2-3</li>
+            <li>menu2-4</li>
+            <li>menu2-5</li>
+        </ul>
+    </div>
+    <div id="extra">
+        <p><strong>BottomContent</strong></p>
+        <h3>Header3</h3>
+        <ul>
+            <li>adminlink1</li>
+            <li>adminlink2</li>
+            <li>adminlink3</li>
+            <li>adminlink4</li>
+        </ul>
+    </div>
+    <div id="footer"><p>Footer</p>
+    </div>
+</div>
+<script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
+</body>
+</html>
